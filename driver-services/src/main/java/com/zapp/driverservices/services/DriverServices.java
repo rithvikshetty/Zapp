@@ -27,6 +27,10 @@ public class DriverServices {
         driverRepository.save(p);
     }
 
+    public void addDriver(driver d){
+        driverRepository.save(d);
+    }
+
     public void delete(String id){
         driverRepository.deleteById(id);
     }
