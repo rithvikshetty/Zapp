@@ -34,9 +34,9 @@ public class InventoryServices {
         inventoryrepo.deleteById(id);
     }
 
-    public product updateRecepient(String p, String id) {
+    public product updateRecepient(String rpt,String id) {
         product p1 = inventoryrepo.findById(id).get();
-        p1.setRecepient(p);
+        p1.setRecepient(rpt);
         inventoryrepo.save(p1);
         return p1;
     }

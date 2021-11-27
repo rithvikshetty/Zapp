@@ -30,13 +30,13 @@ public class InventoryController{
     }
 
     @PostMapping("/addProduct")
-    public product createproduct(product p){
+    public product createproduct(@RequestBody product p){
         return inventoryservice.addProduct(p);
     }
 
-    @PutMapping("/updateRecepient")
-    public product updateproduct(@RequestBody String p,@PathVariable String id){
-        return inventoryservice.updateRecepient(p, id);
+    @PutMapping("/updateRecepient/{id}")
+    public product updateproduct(@RequestBody String rpt,@PathVariable String id){
+        return inventoryservice.updateRecepient(rpt,id);
     }
 
     @DeleteMapping("/deleteAll")

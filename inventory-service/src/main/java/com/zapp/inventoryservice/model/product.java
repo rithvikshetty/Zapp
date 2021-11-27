@@ -1,12 +1,11 @@
 package com.zapp.inventoryservice.model;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 import javax.persistence.Entity;
 // import javax.persistence.GeneratedValue;
 // import javax.persistence.GenerationType;
-//import javax.persistence.Id;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table
@@ -30,6 +29,13 @@ public class product {
         date=dat;
         status=stat;
     }
+    public String getPname(){
+        return pname;
+    }
+
+    public void setPname(String pname){
+        this.pname=pname;
+    }
 
     public String getId() {
         return id;
@@ -38,7 +44,13 @@ public class product {
     public void setId(String id) {
         this.id = id;
     }
+    public String getRpt(){
+        return rpt;
+    }
 
+    public void setRpt(String rpt){
+        this.rpt=rpt;
+    }
     public String getRecepient() {
         return rpt;
     }

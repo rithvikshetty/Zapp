@@ -8,4 +8,6 @@ import java.util.*;
 @Repository
 public interface InventoryRepository extends JpaRepository<product,String>{
     List<product> findByStatus(int status);
+    product findByrpt(String rpt);
+
 }
