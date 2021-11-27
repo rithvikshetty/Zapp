@@ -1,2 +1,2 @@
 # Zapp
-A MicroServices Mddel Based Delivery App
+A MicroServices Model Based Delivery App
