@@ -23,8 +23,8 @@ public class driver {
 
     }
 
-    public driver(String id, String name, int avail, int pin){
-        this.id=id;
+    public driver(String name, int avail, int pin){
+        
         this.name=name;
         this.avail=avail;
         this.pin=pin;
