@@ -5,14 +5,17 @@ import com.zapp.driverservices.services.DriverServices;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
-public class DriverController {
+
+
+@RestController
+ class DriverController {
     private final DriverServices driverservices;
 
-    public DriverController(DriverServices driverservices){
+    public DriverController(DriverServices driverServices){
         this.driverservices=driverServices;
     }
 
-    @GetMapping("/getAllDrivers")
+    @GetMapping("/getAll")
     public List<driver> getAll(){
         return driverservices.getAllDrivers();
     }

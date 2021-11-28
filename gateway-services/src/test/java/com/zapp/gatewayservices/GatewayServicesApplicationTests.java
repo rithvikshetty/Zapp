@@ -1,10 +1,10 @@
-package com.zapp.discoveryservice;
+package com.zapp.gatewayservices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DiscoveryServiceApplicationTests {
+class GatewayServicesApplicationTests {
 
 	@Test
 	void contextLoads() {
