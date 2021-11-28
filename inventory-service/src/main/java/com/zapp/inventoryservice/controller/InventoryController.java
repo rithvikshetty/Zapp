@@ -1,11 +1,13 @@
 package com.zapp.inventoryservice.controller;
 
+import org.springframework.stereotype.Controller;
 import com.zapp.inventoryservice.model.product;
 import com.zapp.inventoryservice.services.InventoryServices;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+@RequestMapping("/inventory")
 @RestController
 public class InventoryController{
     private final InventoryServices inventoryservice;
